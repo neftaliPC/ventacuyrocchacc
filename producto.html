@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>COMPRA</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+                <li class="navbar-top-item">
+                    <a href="registrarse.html" class="navbar-top-links">Registro</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="registrarse.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="index.html">A. P. A. LOS JOVENES DE NUEVA COSTA - ROCCHACC</a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="index.html">A. P. A. LOS JOVENES DE NUEVA COSTA - ROCCHACC</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu active" href="#">Cuy <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            
+   
+                            <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                <h2 class="ads-h2">Desde el 50% de descuento</h2>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-menu-item"><a href="raza.html" class="nav-menu-link">Raza</a></li>
+                    <li class="nav-menu-item"><a href="video.html" class="nav-menu-link">Videos</a></li>
+                    <li class="nav-menu-item"><a href="registrarse.html" class="nav-menu-link">Registro</a></li>
+                    <li class="nav-menu-item"><a href="video.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-second">
+        <div class="banner-container ">
+            <h1>COME CUY</h1>
+            <h2>Todos contra la anemia</h2>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-fifths-desktop">
+                <div class="slider" id="slider">
+                    <div class="slider-img-container">
+                        <img src="img/1.jpg" alt="cuy" class="active slider-item">
+                    </div>
+                    <div class="slider-img-container">
+                        <img src="img/7.jpg" alt="cuy" class="slider-item">
+                    </div>
+                    <div class="slider-img-container">
+                        <img src="img/9.jpg" alt="cuy" class="slider-item">
+                    </div>
+                    <div class="slider-button-left slider-buttons" onclick="previus()">
+                        <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+                    </div>
+                    <div class="slider-button-right slider-buttons" onclick="next()">
+                        <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="is-size-4">Seleccione Cuy</h3>
+                <div class="course-rating-container">
+                    <div class="rating-stars" style="--rating: 86%">
+                    </div>
+                </div>
+
+                <h2 class="price is-size-4"><sup>S/</sup>22.99</h2>
+                <p class="has-text-grey"> <strong>Disponibilidad:</strong> En stock</p>
+                <p class="has-text-grey"><strong>Código del procuto: </strong>#12345</p>
+                <p class="text-default">El cuy es un mamífero roedor originario de la zona andina del Perú, Ecuador,
+                     Colombia y Bolivia.
+                     Constituye un producto alimenticio nativo, de alto valor nutritivo y bajo costo de producción,
+                      que contribuye a la seguridad alimentaria de la población rural de escasos recursos.</p>
+                <form action="#" class="form-control">
+                    <div class="columns is-multiline">
+                        <div class="column is-one-third">
+                            <label for="color">Color</label>
+                            <select class="form-control-field" id="color">
+                                <option value="#">Color 1</option>
+                                <option value="#">Color 2</option>
+                                <option value="#">Color 3</option>
+                            </select>
+
+                        </div>
+                        <div class="column is-one-third">
+
+                            <label for="size">Tamaño</label>
+                            <select class="form-control-field" id="size">
+                                <option value="#">Tamaño 1</option>
+                                <option value="#">Tamaño 2</option>
+                                <option value="#">Tamaño 3</option>
+                            </select>
+                        </div>
+                        <div class="column is-one-third">
+                            <label for="quality">Cantidad</label>
+                            <input class="form-control-field" type="number">
+                        </div>
+                        <div class="column is-full is-marginless">
+                            <button class="btn btn-default btn-outline"><i class="zmdi zmdi-shopping-cart"></i>
+                                Agregar al carrito</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="columns is-tablet">
+            <div class="column">
+                <div class="tabs-container">
+                    <ul class="tabs" id="tabs">
+                        <li class="tabs-item active-tab">Descripción</li>
+                        <li class="tabs-item">Video</li>
+                    </ul>
+                    <div class="tabs-panels">
+                        <div class="tab-panel active-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <h2 class="is-size-4">Descripción</h2>
+                                        <p>El cuy es una especie nativa del Peru y es originaria de los andes. 
+                                            Su crianza está muy difundida en nuestro pais y en los ultimos 5 años su producciòn creciò
+                                             màs del 50% con muchas personas que se han dedicado a la crianza tanto por producir carne 
+                                             para consumo propio que para emprender un negocio obteniendo nuevos ingresos para su hogar.
+
+                                            El Perú es el primer país productor y consumidor de su carne a nivel mundial. 
+                                            Hay demanda insatisfecha para el mercado nacional y para exportaciòn. Debido a eso se trata 
+                                            de un negocio muy bueno donde poder incursionar y invertir.
+                                            
+                                            Su bajo costo de producción y su alta calidad nutricional hacen del cuy la mejor carne para 
+                                            las poblaciones pobres que pueden consumir un alimento sano y con propiedades nutricionales 
+                                            valiosas gastando o invirtiendo muy poco.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column is-half">
+                                        <div class="video-container">
+                                            <iframe width="853" height="480" src="https://www.youtube.com/embed/a_DHCfEoDHA"
+                                                 title="ASÍ CRÍAN A LOS CUYES QUE COMEMOS | ¿Los comerías después de ver este video? | Dilo Nomás"
+                                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                            </iframe>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-full">
+                    <div class="footer-socials">
+                        <a class="footer-solcials-link" href="https://web.facebook.com/?_rdc=1&_rdr"><i class="zmdi zmdi-facebook"></i></a>
+                        <a class="footer-solcials-link" href="https://web.whatsapp.com/"><i class="zmdi zmdi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
